@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '2'
+
+services:
+  jenkins-node01:
+    build: .
+    # build from Dockerfile
+      context: .
+      dockerfile: Dockerfile_1
+    ports:
+      - "8088:8080"
